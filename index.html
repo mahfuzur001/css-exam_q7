@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-image: url(images.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .glass-effect{
+            width: 350px;
+            padding: 50px;
+            background-color: transparent;
+            border-radius:20px ;
+            border: 1px solid gray;
+            box-shadow: 0 5px 15px;
+            align-items: center;
+            background: rgba(84, 79, 79, 0.5);
+        }
+        h1{
+            margin-top: 20px;
+            color: rgb(238, 245, 245);
+            /* font-size: 25px; */
+        }
+
+        input[type='email'],
+        input[type='password']{
+            color: red;
+            width: 100%;
+            padding: 10px ;
+            padding-left: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: none;
+        }
+        input[type='email']::before{
+            content: '<i class="fa-regular fa-envelope"></i>';
+            background:black ;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            padding-right: 20px;
+            margin: 10px 0;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            cursor: pointer;
+            color: rgb(142, 140, 140);
+            font-size: 18px;
+            color: blue;
+        }
+        input[type="submit"]:hover {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color: rgba(250, 248, 248, 0.5);
+            border-radius: 10px;
+            cursor: pointer;
+            color: rgb(24, 24, 25);
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        a:hover {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background: rgba(150, 127, 127, 0.2);
+            border-radius: 10px;
+            margin: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        i{
+            color: black;
+            padding: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .input{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-effect">
+        <form action="">
+            <h1>Follish Developer</h1>
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                <input class="input" type="email" placeholder="Email id" required>
+            </div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="submit" value="Log in">
+            </div>
+            <h3>or</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Google</a>
+        </form>
+    </div>
+    
+</body>
+</html>
